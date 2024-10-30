@@ -1,0 +1,29 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(8, minmax(auto, 10em)) 1fr;
+    grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+}
+
+.up-header {
+    grid-column: span 12;
+    background-color: blue;
+}
+
+header {
+    grid-column: span 12;
+    background-color: #fff;
+}
+
+aside {
+    grid-column: 1/2;
+    background-color: #f4f4f5;
+}
+
+main {
+    grid-column: 2/12;
+}
+
+footer {
+    grid-column: span 12;
+    height: 300px;
+}
